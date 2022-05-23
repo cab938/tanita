@@ -54,16 +54,16 @@ This model has eight slots of data (up to `DATA8.CSV` and `PROF8.CSV`).
 "~1": "Mass unit"
 "~2": "Unknown: 4"
 "~3": "Unknown: 3"
-"Bt": "Unknown: 2, it has something to do with the athlete mode. When I set male athelete it is 2, when I set male it is 0"
-"Wk": "Body mass"
-"MI": "Body mass index (BMI)"
 "MO": Model
 "DT": Measurement Date
 "Ti": Measurement Time
+"Bt": "Unknown: 2, it has something to do with the athlete mode. When I set male athelete it is 2, when I set male it is 0"
 "GE": Gender
 "AG": Age
 "Hm": Height
 "AL": Activity Level
+"Wk": "Body mass"
+"MI": "Body mass index (BMI)"
 "FW": "Global fat %"
 "Fr": "Arm fat (right) %"
 "Fl": "Arm fat (left) %"
@@ -78,8 +78,8 @@ This model has eight slots of data (up to `DATA8.CSV` and `PROF8.CSV`).
 "mT" = "Torso muscle %"
 "bw": "Estimated bone mass"
 "IF": "Visceral fat rating"
-"rA": "Estimated metabolic age"
 "rD": "Daily calorie intake (DCI)"
+"rA": "Estimated metabolic age"
 "ww": "Global body water %"
 "CS": "Unknown: BC, this does change per entry"
 ```
