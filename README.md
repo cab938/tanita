@@ -5,36 +5,45 @@ Each measurement file is comma separated, where a given line indicates a measure
 
 ```
 "{0": "Unknown: 16"
-"~0": "Length unit"
-"~1": "Mass unit"
-"~2": "Unknown: 4"
-"~3": "Unknown: 3"
-"Bt": "Unknown: 2, it has something to do with the athlete mode. When I set male athelete it is 2, when I set male it is 0"
-"Wk": "Body mass"
+"~0": "Length unit (metric = 2) "
+"~1": "Mass unit (metric = 2)" 
+"~2": "Unknown"
+"~3": "Unknown"
+"Bt": "Body type (athlete or not, male athlete = 2, male non-athlete = 0)"
+"Wk": "Weight"
 "MI": "Body mass index (BMI)"
 "MO": Model
 "DT": Measurement Date
 "Ti": Measurement Time
-"GE": Gender
+"GE": Gender (male = 1)
 "AG": Age
 "Hm": Height
-"AL": Activity Level
+"AL": "Activity Level (1-3 according to set value. Athlete is always 3 and shifts data like basal and muscles even slightly above non-athlete with level 3 activity)"
 "FW": "Global fat %"
 "Fr": "Arm fat (right) %"
 "Fl": "Arm fat (left) %"
 "FR": "Leg fat (right) %"
 "FL": "Leg fat (left) %"
 "FT": Torso fat %"
-"mW" = "Global muscle %"
-"mr" = "Arm muscle (right) %"
-"ml" = "Arm muscle (left) %"
-"mR" = "Leg muscle (right)%"
-"mL" = "Leg muscle (left) %"
-"mT" = "Torso muscle %"
-"bw": "Estimated bone mass"
+"mW": "Global muscle (kg)"
+"mr": "Arm muscle (right) (kg)"
+"ml": "Arm muscle (left) (kg)"
+"mR": "Leg muscle (right) (kg)"
+"mL": "Leg muscle (left) (kg)"
+"mT": "Torso muscle (kg)"
+"bw": "Estimated bone mass (kg)"
 "IF": "Visceral fat rating"
 "rA": "Estimated metabolic age"
-"rD": "Daily calorie intake (DCI)"
+"rD": "Daily calorie intake (DCI). Not basal! Basal may be calculated using coefficients linked to the activity level and gender. See below"
 "ww": "Global body water %"
 "CS": "Unknown: BC, this does change per entry"
+
+
+Daily Calorie Intake = BMR * Activity level coefficient
+Female activity level 1 coeff = 1.56
+Female activity level 2 coeff = 1.64
+Female activity level 3 coeff = 1.82
+Male activity level 1 coeff = 1.55
+Male activity level 2 coeff = 1.78
+Male activity level 3 coeff = 2.10
 ```
